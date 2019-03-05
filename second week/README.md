@@ -1,9 +1,9 @@
 ## hillClimbingWeeklycost  (一周吃甚麼?)
 
-###簡介
+### 簡介
 規劃一周內午晚餐要吃甚麼?
 怎樣吃才能最符合自己又可以在預算之內
-####預算與餐點
+#### 預算與餐點
 ```javascript
 var budget = 1000   //一周預算 1000元
 
@@ -18,7 +18,7 @@ var diet = [
 
 ```
 
-####規則
+#### 規則
 ```javascript
 //晚餐吃太少 能量增加
 if(si%2 == 1 && diet[fills[si]].serving == "medium" || diet[fills[si]].serving == " ") 
@@ -36,7 +36,7 @@ if(si%2 == 1 && diet[fills[si]].serving == "medium" || diet[fills[si]].serving =
 //超出預算 能量增加
     if(sum_cost > budget) score++  
 ```
-####結果
+#### 結果
 `node hillClimbingWeeklycost.js`
 ```
 solution: score=-0.020
