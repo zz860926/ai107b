@@ -92,7 +92,7 @@ function randDiet() {
         if(si < slots.length-2 && diet[fills[si]].name == diet[fills[si+2]].name)    //隔天午餐或晚餐吃一樣的(會膩)  能量增加
           score +=0.01
         if(si < slots.length-1 && diet[fills[si]].name == diet[fills[si+1]].name)    //午餐跟晚餐吃一樣(會膩)  能量增加
-          score +=0.03
+        score +=0.03
       }
       if(sum_cost > budget) {
         score++
