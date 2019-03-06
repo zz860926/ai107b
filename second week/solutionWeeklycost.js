@@ -4,11 +4,13 @@ var budget = 1000
 
 var diet = [
     {serving:' ',name:' ',cost:0},
-    {serving:'large',name:'祥富簡餐',cost:80},
+    {serving:'large',name:'祥富簡餐',cost:80},    
     {serving:'medium',name:'祥富素香飯',cost:60},
     {serving:'large',name:'福圓三色拼飯',cost:60},
     {serving:'medium',name:'素肉鬆手卷',cost:45},
 ]
+
+var serving =['large','medium']   //large 份量大  medium 分量中等
 
 function miniCost(){
   var min = 50
@@ -18,9 +20,6 @@ function miniCost(){
   }
   return min
 } 
-
-
-var kind =['food','drink','side_dish']
 
 var slots = [
     'A11', 'A12',   //午餐、晚餐
